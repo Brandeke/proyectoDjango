@@ -1,7 +1,10 @@
 from .models import Cliente
 from rest_framework import serializers
 
-class ClienteSerializers(serializers.ModelSerializers):
+# un serializers sirve para transformar el objeto
+# a json y viceversa, esto para la comunicacion de datos
+
+class ClienteSerializers(serializers.ModelSerializer):
     class Meta:
         model = Cliente
-        fileds = '__all__'
+        fields = '__all__'
