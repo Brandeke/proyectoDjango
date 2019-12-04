@@ -23,6 +23,7 @@ urlpatterns = [
     path('listar_clientes', include('app.urls')),
     path('editar_cliente/<int:cliente_id>', include('app.urls')),
     path('borrar_cliente/<int:cliente_id>', include('app.urls')),
+    path('login', include('app.urls')),
     path('principal', include('app.urls')),
     path('catalogo', include('app.urls')),
 ]
